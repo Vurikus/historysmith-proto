@@ -4,7 +4,7 @@ package proto.world;
 
 option java_multiple_files = true;
 option java_package = "proto.world";
-option java_outer_classname = "SphereTileKey";
+option java_outer_classname = "SphereTileKeyProto";
 
 import "proto/common/api_vector3.proto";
 

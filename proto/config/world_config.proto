@@ -4,7 +4,7 @@ package proto.config;
 
 option java_multiple_files = true;
 option java_package = "proto.config";
-option java_outer_classname = "WorldConfiguration";
+option java_outer_classname = "WorldConfigurationProto";
 
 message WorldConfiguration {
   float radius = 1;
