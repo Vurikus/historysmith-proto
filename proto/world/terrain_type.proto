@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package proto.world;
+
+option java_multiple_files = true;
+option java_outer_classname = "TerrainTypeProto";
+
+enum TerrainType {
+  GRASS = 0;
+  DESERT = 1;
+  OCEAN = 2;
+}

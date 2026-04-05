@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package proto.world;
+
+option java_multiple_files = true;
+option java_outer_classname = "TileProto";
+
+import "proto/world/terrain_type.proto";
+import "proto/world/relief_type.proto";
+import "proto/world/tile_key.proto";
+
+message Tile {
+  string id = 1;
+  proto.world.TileKey key = 2;
+  proto.world.ReliefType mt1Relief = 3;
+  proto.world.ReliefType mt2Relief = 4;
+  proto.world.ReliefType mt3Relief = 5;
+  proto.world.TerrainType terrainType = 6;
+}
