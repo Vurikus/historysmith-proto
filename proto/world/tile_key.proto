@@ -5,8 +5,6 @@ package proto.world;
 option java_multiple_files = true;
 option java_outer_classname = "TileKeyProto";
 
-import "proto/common/api_vector3.proto";
-
 message TileKey {
   string id = 1;
   float xNormal = 2;
