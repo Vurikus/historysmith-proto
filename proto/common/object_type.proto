@@ -13,4 +13,5 @@ enum ObjectTypeProto {
   Map = 3;
   Tile = 4;
   TileKey = 5;
+  ErrorMessage = 6;
 }
