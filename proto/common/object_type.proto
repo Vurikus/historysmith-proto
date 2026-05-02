@@ -5,13 +5,11 @@ package proto.common;
 option java_multiple_files = true;
 option java_outer_classname = "ObjectTypeProtoOuter";
 
-// Типы сообщений
+// Тип сообщения в конверте
 enum ObjectTypeProto {
-  Unknown = 0;
-  WorldConfiguration = 1;
-  World = 2;
-  Map = 3;
-  Tile = 4;
-  TileKey = 5;
-  ErrorMessage = 6;
+  Unknown = 0;                // Неизвестный тип
+  TryAction = 1;              // Запрос на сервер с вопросом "можно ли" выполнить действие
+  Action = 2;                 // Запрос на сервер с намерением выполнить действие
+  SyncState = 3;              // Ответ с сервера с новым состоянием объекта
+  RequestSyncState = 4;       // Запрос на синхронизацию объекта. Только со стороны клиента
 }

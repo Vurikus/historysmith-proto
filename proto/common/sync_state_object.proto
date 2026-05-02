@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package proto.common;
+
+option java_multiple_files = true;
+option java_outer_classname = "SyncStateProtoOuter";
+
+import "proto/common/sync_state_object_type.proto";
+
+// Мессадж для синхронизации состояния игровой партии на клиенте. Мессадж идет только со стороны сервера
+// В ObjectTypeProto тип объекта который хотим синхронизировать
+message SyncStateProto {
+  proto.common.SyncStateObjectTypeProto type = 1;
+  int32 version = 2;
+  bytes data = 3;
+}
