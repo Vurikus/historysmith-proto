@@ -10,5 +10,5 @@ import "proto/common/object_type.proto";
 message EnvelopeProto {
   proto.common.ObjectTypeProto type = 1;
   bytes data = 2;
-  string message_id = 3;
+  int32 message_id = 3;
 }
