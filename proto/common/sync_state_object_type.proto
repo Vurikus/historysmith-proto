@@ -7,11 +7,10 @@ option java_outer_classname = "SyncStateObjectTypeProtoOuter";
 
 // Типы сообщений для синхронизации состояния
 enum SyncStateObjectTypeProto {
-  Unknown = 0;
+  ErrorMessage = 0;
   WorldConfiguration = 1;
   World = 2;
   Map = 3;
   Tile = 4;
   TileKey = 5;
-  ErrorMessage = 6;
 }
