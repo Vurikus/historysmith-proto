@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto.common;
+
+option java_multiple_files = true;
+option java_outer_classname = "EnvelopeRequestProtoOuter";
+
+message EnvelopeRequestProto {
+  int32 message_id = 1;
+  oneof payload {
+    proto.common.SyncStateRequestProto sync_state = 2;
+    proto.common.ActionRequestProto action = 3;
+
+  }
+}
