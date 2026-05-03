@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package proto.common;
+
+option java_multiple_files = true;
+option java_outer_classname = "WorldBaseRequestProtoOuter";
+
+import "proto/worldbase/world_configuration.proto";
+
+message WorldBaseRequestProto {
+  oneof payload {
+    proto.worldbase.WorldConfigurationProto generation_config = 1;
+  }
+}

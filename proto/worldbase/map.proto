@@ -1,14 +1,12 @@
 syntax = "proto3";
 
-package proto.world;
+package proto.worldbase;
 
 option java_multiple_files = true;
 option java_outer_classname = "MapProtoOuter";
 
 import "proto/world/tile.proto";
-import "proto/config/map_type.proto";
 
 message MapProto {
   repeated proto.world.TileProto tiles = 1;
-  proto.config.MapTypeProto map_type = 2;
 }

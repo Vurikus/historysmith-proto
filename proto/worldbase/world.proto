@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package proto.worldbase;
+
+option java_multiple_files = true;
+option java_outer_classname = "WorldProtoOuter";
+
+import "proto/worldbase/world_configuration.proto";
+import "proto/worldbase/map.proto";
+
+message WorldProto {
+  proto.worldbase.WorldConfigurationProto configuration = 1;
+  proto.worldbase.MapProto size = 2;
+}

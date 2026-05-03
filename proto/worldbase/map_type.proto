@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package proto.config;
+package proto.worldbase;
 
 option java_multiple_files = true;
 option java_outer_classname = "MapTypeProtoOuter";
