@@ -5,6 +5,9 @@ package proto.common;
 option java_multiple_files = true;
 option java_outer_classname = "EnvelopeRequestProtoOuter";
 
+import "proto/common/sync_state_req.proto";
+import "proto/common/action_req.proto";
+
 message EnvelopeRequestProto {
   int32 message_id = 1;
   oneof payload {
