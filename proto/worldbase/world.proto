@@ -6,9 +6,9 @@ option java_multiple_files = true;
 option java_outer_classname = "WorldProtoOuter";
 
 import "proto/worldbase/world_configuration.proto";
-import "proto/worldbase/map.proto";
+import "proto/world/tile.proto";
 
 message WorldProto {
   proto.worldbase.WorldConfigurationProto meta = 1;
-  proto.worldbase.MapProto map = 2;
+  repeated proto.world.TileProto tiles = 2;
 }
