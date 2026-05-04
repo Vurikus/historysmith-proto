@@ -16,6 +16,6 @@ message EnvelopeRequestProto {
     proto.common.SyncStateRequestProto sync_state = 2;        // Запрос с клиента на получение актуального состояния объекта
     proto.common.ActionRequestProto action = 3;               // Объект с конкретным действием игрока. Например переместить отряд. Построить здание...
     proto.common.IntentionRequestProto intention = 4;         // Запросы на попытку совершить действие, намерение. Например игрок навел кнопку с попыткой атаковать
-    proto.common.WorldBaseRequestProto world = 5;                 // Запросы связанные с базой - неизменяемыми частями мира. Внутри объекта различные типы - либо создание нового мира, либо получение старого
+    proto.common.WorldBaseRequestProto world = 5;             // Запросы связанные с базой - неизменяемыми частями мира. Внутри объекта различные типы - либо создание нового мира, либо получение старого
   }
 }

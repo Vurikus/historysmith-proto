@@ -9,6 +9,6 @@ import "proto/worldbase/world_configuration.proto";
 import "proto/worldbase/map.proto";
 
 message WorldProto {
-  proto.worldbase.WorldConfigurationProto configuration = 1;
-  proto.worldbase.MapProto size = 2;
+  proto.worldbase.WorldConfigurationProto meta = 1;
+  proto.worldbase.MapProto map = 2;
 }
